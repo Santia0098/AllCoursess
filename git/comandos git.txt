@@ -33,7 +33,15 @@ git reset rama --hard -> forza a regresar rodo el proyecto a una version anterio
 git reset rama --soft -> cambia el proyecto actual a la rama anterior, pero lo guardado en stage se mantiene
 git push -> manda los cambios al servidor donde se encuentra el proyecto
 git fetch -> trae el escritorio remoto al local
-git merge -> hace una combinacion de las ultimas versionas
+git merge -> hace una combinacion de las ultimas versionas de dos ramas
 git pull  -> copia el repositorio local y la bd de cambios
+git checkout rama -> hace un switch a una rama diferente
+git checkout -b Nombrerama -> crea una nueva rama y se mueve a la nueva rama.
+git branch -> muestra las ramas existentes
+git remote add origin "link" -> se encarga de sincronizar nuestro repositorio a un repositorio de github.
+git init 	-> crea la configuracion inicial de nuestro repositorio.
+ssh-keygen -t rsa -b 4096 -C "youremail@example.com" -> permite crear una llave SSH publica / privada
+eval $(ssh-agent - s) -> comprueba el procesp
+ssh-add ~/.ssh/id_rsa -> agrega el proceso
 
 ---------
