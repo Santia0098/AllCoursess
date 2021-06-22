@@ -1,0 +1,62 @@
+--- El siguiente archivo muestra la lista de comandos
+utilizados en el curso de Introduccion a la Terminal
+y Linea de Comandos, con una breve descripcion de cada
+uno ---
+
+/*Comandos y descripcion*/
+
+cd 	-> permite la navegacion entre directorios
+ls 	-> lista el contenido del directorio en el que nos situamos
+ls -l 	-> muestra el contenido del directorio junto con la informacion de creacion y peso.
+ls -lh 	-> es igual al anterior, difiere en que el peso de los archivos se muestra en Kb, MB, etc.
+pwd 	-> muestra la ruta del directorio actual.
+rm 	-> elimina archivos
+rm -ri 	-> elimina archivos de una manera interactiva, incluso permite borrar directorios.
+head 	-> lee las primeras 10 lineas de un archivo de texto
+tail 	-> lee las ultimas 10 lineas de un archivo
+head -nX-> permite leer N numero de lineas(X)
+tail -nX-> permite leer N numero de lineas(X)
+less 	-> permite leer todo el contenido de un archivo de texto
+cat 	-> permite concatenar la informacion de dos archivos.
+mv x /destino -> mueve el archivo x a un nuevo destino
+mv x y -> cambia el nombre del archivo x a y.
+xdg-open -> abre un archivo de texto en un programa predeterminado
+touch X -> crea un nuevo archivo
+file X -> muestra las caracteristicas del archivo
+tree 	-> muestra el arbol de directorios y archivos de la ruta en donde estamos ubicados.
+tree -L 2 -> muestra un arbol de dos niveles de profundidad .
+which cd(comando) -> muestra de forma breve el funcionamiento del comando.
+alias 	-> permite crear un "snippet" para ejecutar un comando de una forma mas sencilla.
+ls -d [[:upper/lower:]]* -> muestra los directorios o archivos que inicien en Mayusculas o Minusculas
+chmod u-r archivo -> define que al usuario se le eliminan los permisos de lectura
+chmod u+r archivo -> otorga permiso de lectura al usuario 
+whoami 	-> nos retorna nuestro usuario
+sudo 	-> permite ejecutar comandos como superusuario
+echo 	-> permite hacer una impresion de texto en la terminal
+su 	-> permite hacer un cambio de usuario
+passwd 	-> permite ralizar un cambio de password del usuario actual
+ln -s Ruta LinkSimbolico -> permite asignar un link predeterminado a un ruta.
+printenv -> imprime las variables de entorno
+echo $HOME / $PATH -> imprime la ruta donde se encuentran estas variables de entorno
+find 	-> permite realizar la buqueda de un archivo en una ruta
+grep 	-> busca con expresiones regulares concidencias de texto dentro de un archivo
+grep -i -> realiza exactamente la misma accion, solo que ignora dentro de la busqueda las mayusculas y minusculas
+grep -c -> realiza un conteo de las veces que aparece la palabra en el archivo de texto 
+grep -v -> filtra todas las coincidencias que no contengan la palabra que estamos utilizando
+wc 	-> cuenta el numero de palabras del archivo
+wc -l 	-> cuenta el numero de lineas
+wc -w 	-> cuenta el numero de palabras
+wc -c 	-> arroja el numero de bits
+ifconfig-> nos otorga informacion de la red
+ping 	-> determina si la pagina esta activa
+curl 	-> trae un archivo de la red tranformado en texto
+wget 	-> nos guarda como un archivo de texto la consulta al link que ingresamos.
+traceroute -> nos imprime las direcciones de todas la computadoras por las que pasamos para llegar al link especificado
+netstat -i -> muestra los dispositivos de red
+tar -cvf Nombrearchivo.tar archivoAComprimir  -> nos permite comprimir archivos generando un archivo con la extension .tar
+zip -r -> nos ayuda a comprimir nuestros archivos con la exension .zip
+unzip 	-> descomprime los archivos .zip
+ps 	-> muestra los procesos activos
+top 	-> muestra los procesos que consumen mas recursos
+kill id -> elimina un proceso
+vim 	-> abre un editor de texto dentro de la terminal

@@ -1,0 +1,39 @@
+/*COMANDOS DE GIT CURSO PROFESIONAL*/
+
+cd 	-> permite la navegacion entre directorios
+cd / 	-> redirige directamente al directorio HOME
+ls 	-> lista los archivos
+ls -al 	-> lista todos los archivos incluyendo los ocultos.
+clear 	-> limpia la consola
+ctrl +l -> limpia la consola
+cd .. 	-> regresa un directorio
+mkdir 	-> crea una carpeta
+touch 	-> permite crear un archivo vacio
+cat 	-> muestra el contenido de un archivo
+history -> muestra el historial de comandos escritos
+rm 	-> permite eliminar archivos
+
+--GIT--
+git status -> muestra el status del proyecto, muestra los commits, rama actual, archivos trackeados
+git add    -> agrega los cambios y los agrega a staged
+git rm     -> elimina el archivo del directorio
+git rm --cached -> almacena los cambios en memoria RAM, aun no estan en la BD.
+git commit -m "msj" -> permite enviar los cambios al repositorio junto con un msj para identificar el cambio.
+git config -> muestra la lista de configuraciones de git
+git config --list   -> se muestran las configuraciones por defecto
+git config --global user.name "Miguel" -> Cambia el usuario de git
+git config --global user.email "correo@gmail.com" -> Cambia el usuario de git
+code archivo.txt -> abre el archivo en VS Code
+git log    -> muestra el historial del repositorio
+git show -> muestra los cambios que han ocurrido en el archivo
+git diff -> permite hacer una comparacion entre dos versiones de los cambios que han ocurrido en el archivo
+git checkout 	-> permite traer cambios de ramas anteriores dependiendo como se configure el comando checkout.
+git reset-> permite regresar el proyecto a una version anterior
+git reset rama --hard -> forza a regresar rodo el proyecto a una version anterior
+git reset rama --soft -> cambia el proyecto actual a la rama anterior, pero lo guardado en stage se mantiene
+git push -> manda los cambios al servidor donde se encuentra el proyecto
+git fetch -> trae el escritorio remoto al local
+git merge -> hace una combinacion de las ultimas versionas
+git pull  -> copia el repositorio local y la bd de cambios
+
+---------
