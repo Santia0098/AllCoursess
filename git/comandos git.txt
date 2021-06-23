@@ -75,4 +75,40 @@ git clean -f -> borra los files untracked
 
 git cherry-pick "hash" -> trae un commit de otra rama a la master
 
+git commit --amend -> une dos commits para subir cmbios en uno solo
+
+git reflog -> muestra todo el historial de como se encontraba el proyecto antes de borrar algo
+
+git reset --soft / --hard "HASH" -> va a resetear el proyecto al head donde todo estaba correcto
+
+git grep color -> busca en los archivos donde se ha usado la palabra color
+
+git grep -n color -> muestra lo mismo que el comando anterior, pero junto con la linea donde se encontro la coincidencia
+
+git grep -c color -> cuenta cuantas veces aparece la palabra color en los archivos.
+
+grep -> busca en los archivos
+
+log -> busca en los commits 
+
+git shortlog -> muestra cuantos commits ha hecho los miembros del equipo y muestra un log
+
+git shortlog -sn -> muestra las personas que han hecho ciertos commits
+
+git shortlog -sn --all -> muestra el numero de commits realizados, incluso los eliminados
+
+git shortlog -sn --all --no-merges -> muestra los commits pero sin mostrar los merges.
+
+git blame "NombreArchivo" -> muestra quien ha realizado cambios en un documento especifico linea por linea
+
+git blame -c "NombreArchivo" -> muestra un poco mejor identado el resultado 
+
+git blame --help -> abre el manual de funcionamiento del comando
+
+git blame "NombreArchivo" -L35,53 -> muestra de forma especifica quien cambio el archivo n ese rando de lineas
+
+git branch -r -> muestra las ramas remotas
+
+git branch -a -> muestra las ramas locales y remotas
+
 ---------
