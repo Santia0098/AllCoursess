@@ -43,5 +43,36 @@ git init 	-> crea la configuracion inicial de nuestro repositorio.
 ssh-keygen -t rsa -b 4096 -C "youremail@example.com" -> permite crear una llave SSH publica / privada
 eval $(ssh-agent - s) -> comprueba el procesp
 ssh-add ~/.ssh/id_rsa -> agrega el proceso
+git remote set-url origin "link del repo" -> permite hacer un reemplazo del link del repositorio actual por uno nuevo
+git log --all --graph -> muestra como funcionan las ramas de una manera un poco mas grafica
+git log --all --graph --decorate --oneline -> muestra lo mismo pero de una forma mas comprimida 
+
+git tag -a v0.1 -m "mensaje" hash -> permite asignar una etiqueta al hash del commit realizado
+
+git push origin :refs/tags/nombreTag -> elimina el tag creado en github
+
+
+un fork es hacer una copia del estado actual del proyecto y se clona.
+
+https://santia0098.github.io/
+
+git rebase rama -> reescribe la historia del repositorio uniendo dos ramas diferentes
+
+git stash -> permite guardar cambios del trabajo actual en el staging
+
+git stash list -> muestra el lugar temporal donde se guardaron los cambios
+
+git stash pop -> regresa a los cambios realizados
+
+git stash branch "nombre-rama" -> guarda en una rama los cambios almacenados en el stash
+
+git stash drop -> borra el cambio almacenado en stash
+
+git clean --dry-run -> simula los archivos que seran borrados del proyecto que son untracked
+
+git clean -f -> borra los files untracked
+
+
+git cherry-pick "hash" -> trae un commit de otra rama a la master
 
 ---------
