@@ -1,21 +1,21 @@
 /*COMANDOS DE GIT CURSO PROFESIONAL*/
 
-cd 	-> permite la navegacion entre directorios
-cd / 	-> redirige directamente al directorio HOME
-ls 	-> lista los archivos
-ls -al 	-> lista todos los archivos incluyendo los ocultos.
-clear 	-> limpia la consola
-ctrl +l -> limpia la consola
-cd .. 	-> regresa un directorio
-mkdir 	-> crea una carpeta
-touch 	-> permite crear un archivo vacio
-cat 	-> muestra el contenido de un archivo
-history -> muestra el historial de comandos escritos
-rm 	-> permite eliminar archivos
+cd 	-> allows navigation between directories
+cd / 	-> redirects directly to the HOME directory
+ls 	-> list the files
+ls -al 	-> list all files including hidden ones.
+clear 	-> Console clean
+ctrl +l -> Console clean
+cd .. 	-> return one directory
+mkdir 	-> make a folder
+touch 	-> make a empty file
+cat 	-> show us file content
+history -> shows the history of written commands
+rm 	-> delete files
 
 --GIT--
-git status -> muestra el status del proyecto, muestra los commits, rama actual, archivos trackeados
-git add    -> agrega los cambios y los agrega a staged
+git status -> show project status, show commits, current branch, tracked files
+git add    -> add the changes and add them to staged
 git rm     -> elimina el archivo del directorio
 git rm --cached -> almacena los cambios en memoria RAM, aun no estan en la BD.
 git commit -m "msj" -> permite enviar los cambios al repositorio junto con un msj para identificar el cambio.
